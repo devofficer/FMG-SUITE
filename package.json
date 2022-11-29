@@ -1,0 +1,31 @@
+{
+  "name": "inversiones",
+  "version": "1.0.0",
+  "description": "html landing page using tailwindcss and barba.js",
+  "main": "index.js",
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "html"
+    }
+  },
+  "scripts": {
+    "watch": "npm-watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss tailwind.css -o src/assets/css/styles.css",
+    "dev": "concurrently \"npm run build && live-server src --port=8080\" \"npm run watch\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "npm-watch": "^0.11.0"
+  }
+}

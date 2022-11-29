@@ -1,0 +1,11 @@
+html {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.marked {
+    background-color: rgb(200, 200, 200) !important;
+}
+
+.faq-desc p {
+    line-height: 20px;
+}

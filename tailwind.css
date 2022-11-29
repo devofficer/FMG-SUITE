@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-7xl text-white mx-auto py-8;
+  }
+
+  .section {
+    @apply text-black p-4;
+  }
+
+  .color-desc {
+    @apply text-[#413F42];
+  }
+
+  .color-blue {
+    @apply text-[#264FA0];
+  }
+
+  .hero-title {
+    @apply text-4xl font-bold;
+  }
+
+  .hero-desc {
+    @apply text-sm font-bold;
+  }
+
+  .sub-container {
+    @apply mt-16 flex flex-col md:flex-row;
+  }
+}
